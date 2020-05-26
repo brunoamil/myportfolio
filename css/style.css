@@ -50,16 +50,21 @@ body {
     box-sizing: border-box;
     height: 40vh;
     margin: 10px;
-    padding: 30px 0 20px 15px;
+    padding: 30px;
 }
 .box h1 {
     font-size: 3em;
 }
-.box p {
+.box-paragrafo {
     font-size: 3em;
 }
+.box-paragrafo-experiencie {
+    margin-top: 25px;
+    line-height: 20px;
+    font-size: 1.25em;
+}
 .box h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
 }
 .boxes .box-name {
@@ -67,7 +72,6 @@ body {
     flex-shrink: 1;
     flex-basis: 35%;
     border: none;
-    /*border: 1px solid #ddd;*/
     padding-top: 50px;
 }
 .boxes .box-profissional {
@@ -107,18 +111,15 @@ body {
 .box-geral:hover:after{
     transform: scaleX(1);
 }
-/*.box-span {
-    width: 20%;
-    height: 10px;
-    background: #52686d;
-    padding: 2px;
-    border-radius: 5px 0 0 0;
+.box-modal {
+    font-size: 2em;
+} 
+.modal-color {
+    color: rgba(0,0,0, 0.1);
     position: absolute;
-    bottom: 0;
-    right: 0;
-} */
-
-
+    bottom: 5px;
+    right: 5px;
+}
 
 /* footer */
 .footer {
