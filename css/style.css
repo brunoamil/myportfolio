@@ -80,6 +80,7 @@ body {
     flex-basis: 35%;
     box-shadow: 0 3px 18px #ddd;
     padding-top: 50px;
+    position: relative;
 }
 .box-geral {
     box-shadow: 0 3px 18px #ddd;
@@ -111,16 +112,62 @@ body {
 .box-geral:hover:after{
     transform: scaleX(1);
 }
-.box-modal {
-    font-size: 2em;
-} 
-.modal-color {
+
+.box-profissional:after,
+.box-profissional:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .4s ease-in-out;
+}
+.box-profissional:before {
+    border-left: 1px solid #52686d;
+    border-right: 1px solid #52686d;
+    transform: scaleY(0);
+}
+.box-profissional::after {
+    border-top: 1px solid #52686d;
+    border-bottom: 1px solid #52686d;
+    transform: scaleX(0);
+}
+.box-profissional:hover:before {
+    transform: scaleY(1);
+}
+.box-profissional:hover:after{
+    transform: scaleX(1);
+}
+.icon-color {
     color: rgba(0,0,0, 0.1);
     position: absolute;
     bottom: 5px;
     right: 5px;
+    font-size: 1.5em;
+}
+.texto-github {
+    text-decoration: none;
+    color: #52686d;
 }
 
+.menu-skill {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-skill li {
+    background: #52686d;
+    padding: 4px;
+    margin: 15px 0 5px 5px;
+    width: 100px;
+    color: #ddd;
+    text-align: center;
+}
+
+.skill-pontuacao {
+    color: #2af35e;
+    font-weight: bold;
+}
 /* footer */
 .footer {
     background: #52686d;
