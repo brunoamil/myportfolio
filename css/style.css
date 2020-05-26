@@ -1,7 +1,8 @@
 
 body {
     font-family: 'DM Mono', monospace;
-    src: url('./font/DMMono-Regular.ttf')
+    src: url('./font/DMMono-Regular.ttf');
+    font-size: 100%;
 }
 /* container */
 .container {
@@ -158,7 +159,7 @@ body {
 .menu-skill li {
     background: #52686d;
     padding: 4px;
-    margin: 15px 0 5px 5px;
+    margin: 15px auto 5px auto;
     width: 100px;
     color: #ddd;
     text-align: center;
@@ -183,8 +184,30 @@ body {
     content: "\1F5A4";
 }
 /* media query */
-@media (max-width: 768px) {
+@media (max-width: 576px){
+    .header {
+        align-items: center;
+    }
     .boxes {
         flex-direction: column;
+    }
+    .footer-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    .boxes .box {
+        height: 45vh;
+    }
+    .box-paragrafo-experiencie {
+        font-size: 1.45em;
+    }
+    .menu-skill li {
+        width: 150px;
     }
 }
