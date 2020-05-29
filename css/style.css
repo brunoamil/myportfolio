@@ -6,9 +6,11 @@ body {
 }
 /* container */
 .container {
-    padding: 15px 10px 50px 10px;
     min-height: calc(100vh - 40px);
+    margin: 10px;
 }
+
+/* menu */
 .header {
     display: flex;
     justify-content: flex-end;
@@ -33,119 +35,66 @@ body {
     font-size: 2em;
     color: #fff;
 }
-
-
-/* Boxes */
-.titulo-nome {
-    border-bottom: 1px solid #52686d;
+.menu-redes-sociais li a:hover {
+    color: #2af35e;
+    transition: ease 1.3s;
 }
+/* Boxes */
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
-.boxes .box {
-    flex: 1;
-    flex-shrink: 1;
-    flex-basis: 30%;
+.box {
+    padding: 30px 15px 10px 15px;
+    height: 50vh;
     box-sizing: border-box;
-    height: 40vh;
-    margin: 10px;
-    padding: 30px;
-}
-.box h1 {
-    font-size: 3em;
-}
-.box-paragrafo {
-    font-size: 3em;
-}
-.box-paragrafo-experiencie {
-    margin-top: 25px;
-    line-height: 20px;
-    font-size: 1.25em;
+    margin: 0.5%;
+    position: relative;
+
 }
 .box h2 {
-    font-size: 2.2em;
+    line-height: 20px;
+    font-size: 1.65em;
     text-align: center;
-}
-.boxes .box-name {
-    flex: 1;
-    flex-shrink: 1;
-    flex-basis: 35%;
-    border: none;
-    padding-top: 50px;
-}
-.boxes .box-profissional {
-    flex: 1;
-    flex-shrink: 1;
-    flex-basis: 35%;
-    box-shadow: 0 3px 18px #ddd;
-    padding-top: 50px;
-    position: relative;
+    margin-bottom: 20px;
 }
 .box-geral {
+    width: 30%;
     box-shadow: 0 3px 18px #ddd;
+    line-height: 25px;
+
+}
+.box-name {
+    width: 37%;
+    box-sizing: border-box;
+    font-size: 3em;
+}
+.box-profissional {
+    width: 37%;
+    box-shadow: 0 3px 18px #ddd;
+    box-sizing: border-box;
+    font-size: 3em;
     position: relative;
-}
-.box-geral:after,
-.box-geral:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform .4s ease-in-out;
-}
-.box-geral:before {
-    border-left: 1px solid #52686d;
-    border-right: 1px solid #52686d;
-    transform: scaleY(0);
-}
-.box-geral::after {
-    border-top: 1px solid #52686d;
-    border-bottom: 1px solid #52686d;
-    transform: scaleX(0);
-}
-.box-geral:hover:before {
-    transform: scaleY(1);
-}
-.box-geral:hover:after{
-    transform: scaleX(1);
+
 }
 
-.box-profissional:after,
-.box-profissional:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform .4s ease-in-out;
+.texto-ux {
+    color: #885ae4;
+    font-weight: bold;
 }
-.box-profissional:before {
-    border-left: 1px solid #52686d;
-    border-right: 1px solid #52686d;
-    transform: scaleY(0);
+.titulo-nome {
+    border-bottom: 1px solid #dbe3e4;
+    color: #2af35e;
+    font-weight: bold;
 }
-.box-profissional::after {
-    border-top: 1px solid #52686d;
-    border-bottom: 1px solid #52686d;
-    transform: scaleX(0);
-}
-.box-profissional:hover:before {
-    transform: scaleY(1);
-}
-.box-profissional:hover:after{
-    transform: scaleX(1);
-}
+
 .icon-color {
     color: rgba(0,0,0, 0.1);
     position: absolute;
     bottom: 5px;
     right: 5px;
     font-size: 1.5em;
+    z-index: 4;
 }
 .texto-github {
     text-decoration: none;
@@ -153,22 +102,119 @@ body {
 }
 
 .menu-skill {
+    height: 20px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 25px;
+    background: #ddd;
+
 }
 .menu-skill li {
-    background: #52686d;
-    padding: 4px;
-    margin: 15px auto 5px auto;
+    color: black;
+    width: 100%;
+}
+.titulo-skill {
     width: 100px;
-    color: #ddd;
-    text-align: center;
+    display: inline-block;
+    padding-left: 15px;
+    color: #FFF;
+    height: 25px;
+    background: #52686d;
+}
+.skill-pontuacao {
+    color: #fff;
+    margin-left: 20px;
+}
+.barra-skill-1 {
+    background: #2af35e;
+    height: 25px;
+    animation: progress-animation-1 3s forwards;
+}
+.barra-skill-2 {
+    background: #2af35e;
+    height: 25px;
+    animation: progress-animation-2 3s forwards;
+}
+.barra-skill-3 {
+    background: #2af35e;
+    height: 25px;
+    animation: progress-animation-3 3s forwards;
+}
+.barra-skill-4 {
+    background: #2af35e;
+    height: 25px;
+    animation: progress-animation-4 3s forwards;
+}
+.span-porcentagem {
+    color: #fff;
+    float: right;
+    padding-right: 10px;
+    position: relative;
+}
+@keyframes progress-animation-1 {
+    from { width: 0%;}
+    to { width: 60%; }
+}
+@keyframes progress-animation-2 {
+    from { width: 0%;}
+    to { width: 70%; }
+}
+@keyframes progress-animation-3 {
+    from { width: 0%;}
+    to { width: 80%; }
+}
+@keyframes progress-animation-4 {
+    from { width: 0%;}
+    to { width: 90%; }
 }
 
-.skill-pontuacao {
-    color: #2af35e;
-    font-weight: bold;
+
+.box-efeito:after,
+.box-efeito:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .4s ease-in-out;
 }
+.box-efeito:before {
+    border-left: 1px solid #2af35e;
+    border-right: 1px solid #2af35e;
+    transform: scaleY(0);
+}
+.box-efeito::after {
+    border-top: 1px solid #2af35e;
+    border-bottom: 1px solid #2af35e;
+    transform: scaleX(0);
+}
+.box-efeito:hover:before {
+    transform: scaleY(1);
+}
+.box-efeito:hover:after{
+    transform: scaleX(1);
+}
+
+/* efeitos de fade in */
+.box h2 {
+    animation:  fadein 1.5s;
+
+}
+.box-profissional {
+    animation:  fadein 1.5s;
+}
+.box-name {
+    animation:  fadein 1.5s;
+}
+@keyframes fadein {
+    from {opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
 /* footer */
 .footer {
     background: #52686d;
@@ -183,7 +229,24 @@ body {
 .footer-text::after {
     content: "\1F5A4";
 }
-/* media query */
+
+/* MEDIA QUERY */
+@media (max-width: 567px) {
+    .box {
+        width: 100%;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    
+}
+@media (min-width: 768px) {
+    
+}
+
+/* media query
 @media (max-width: 576px){
     .header {
         align-items: center;
@@ -210,4 +273,4 @@ body {
     .menu-skill li {
         width: 150px;
     }
-}
+} */
