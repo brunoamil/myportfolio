@@ -308,29 +308,3 @@ body {
          margin-left: 40px;
      }
 }
-
-
-/* media query
-@media (max-width: 576px){
-    .header {
-        align-items: center;
-    }
- 
-   
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (min-width: 992px) {
-    .boxes .box {
-        height: 45vh;
-    }
-    .box-paragrafo-experiencie {
-        font-size: 1.45em;
-    }
-    .menu-skill li {
-        width: 150px;
-    }
-} */
