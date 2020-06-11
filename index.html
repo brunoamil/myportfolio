@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assetscss/font-awesome/css/all.css">
+        <link rel="stylesheet" href="assets/css/font-awesome/css/all.css">
         <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704521-1"></script>
@@ -21,8 +21,7 @@
 <body>
     <header class="header">
         <nav>
-            
-            <ul class="menu-redes-sociais">
+            <ul class="redesSociais">
                 <li><a class="github" href="https://github.com/brunoamil"><i class="fab fa-github-square"></i></a></li>
                 <li><a class="twitter" href="https://twitter.com/brunoamiil"><i class="fab fa-twitter-square"></i></a></li>
                 <li><a class="linkedin" href="https://www.linkedin.com/in/bruno-amil/"><i class="fab fa-linkedin"></i></a></li>
@@ -30,95 +29,118 @@
         </nav>
     </header>
 <div class="container">
-    <div class="boxes"> <!-- box-->
-        <div class="box box-name">
-            <h1 class="name-hi">Hi,</h1>
-            <p class="name-is">my name is <span class="titulo-nome">Bruno</span></p>
+    <div class="box"> <!-- box-->
+        <div class="box__item box__item--perfil box__item__informacoes--barra">
+            <div class="box__item__informacoes">
+               
+                    <div class="box__item__informacoes--foto">
+                        <img class="box__item__foto" src="assets/img/perfil.png">
+                        <p>bruno-amil@hotmail.com</p>
+                    </div>
+               
+                <div class="box__item__informacoes--apresentacao">
+                    <h1 class="box__item__informacoes--principal">Bruno Lima</h1>
+                    <h2 class="box__item__informacoes--cargo">Desenvolvedor Front End</h2>
+                    <p class="box__item__informacoes--descricao">Sou apaixonado por tecnologia, web e principalmente por viagens e a vida. </p> 
+                </div>
+            </div>
         </div>
-        <div class="box box-geral box-efeito">
+        <div class="box__item box__item--geral box__item--efeito">
             <h2>Experiência</h2>
-            <p class="box-paragrafo-experiencie">Algumas tecnologias que já trabalhei durante meus 3 anos como Front-end, são elas: HTML, CSS(Stylus, Sass), JavaScript(ES6), UX/UI, Design Responsivo(Mobile First), Css Frameworks(Bootstrap, Materialize), ReactJS, NodeJs, Git, MySql, Wordpress.</p>
-            <span><i class="fa fa-star icon-color"></i></span>
+            <p>Algumas tecnologias que já trabalhei durante meus 3 anos como Front-end, são elas: HTML, CSS(Stylus, Sass), JavaScript(ES6), UX/UI, Design Responsivo(Mobile First), Css Frameworks(Bootstrap, Materialize), ReactJS, NodeJs, Git, MySql, Wordpress.</p>
+            <span><i class="fa fa-star box__icon__cor"></i></span>
         </div>
-        <div class="box box-geral box-efeito">
+        <div class="box__item box__item--geral box__item--efeito">
             <h2>Minhas Skills</h2>
-            <div class="menu-skill">
-                <div class="barra-skill-4">
-                    <div class="titulo-skill">
+            <div class="skill">
+                <div class="skill__barra--4">
+                    <div class="skill__titulo">
                         <span>HTML</span>
                     </div>
-                    <span class="span-porcentagem">90%</span>
+                    <span class="skill__porcento">90%</span>
                 </div>
             </div>
-            <div class="menu-skill">
-                <div class="barra-skill-4">
-                    <div class="titulo-skill">
+            <div class="skill">
+                <div class="skill__barra--4">
+                    <div class="skill__titulo">
                         <span>CSS</span>
                     </div>
-                    <span class="span-porcentagem">90%</span>
+                    <span class="skill__porcento">90%</span>
+
                 </div>
             </div>
-            <div class="menu-skill">
+            <div class="skill">
                 <div class="barra-skill-2" style="width: 20%;">
-                    <div class="titulo-skill">
+                    <div class="skill__titulo">
                         <span>JavaScript</span>
                     </div>
-                    <span class="span-porcentagem">70%</span>
+                    <span class="skill__porcento">70%</span>
                 </div>
             </div>
-            <div class="menu-skill">
+            <div class="skill">
                 <div class="barra-skill-1">
-                    <div class="titulo-skill">
+                    <div class="skill__titulo">
                         <span>React</span>
                     </div>
-                    <span class="span-porcentagem">60%</span>
+                    <span class="skill__porcento">60%</span>
                 </div>
             </div>
-            <div class="menu-skill">
+            <div class="skill">
                 <div class="barra-skill-3">
-                    <div class="titulo-skill">
+                    <div class="skill__titulo">
                         Wordpress
                     </div>
-                    <span class="span-porcentagem">80%</span>
+                    <span class="skill__porcento">80%</span>
                 </div>
             </div>
-            <div class="menu-skill">
+            <div class="skill">
                 <div class="barra-skill-1">
-                    <div class="titulo-skill">
+                    <div class="skill__titulo">
                         <span>NodeJS</span>
                     </div>
-                    <span class="span-porcentagem">60%</span>
+                    <span class="skill__porcento">60%</span>
                 </div>
             </div>
-            <div class="menu-skill">
+            <div class="skill">
                 <div class="barra-skill-3">
-                    <div class="titulo-skill">
+                    <div class="skill__titulo">
                         <span>UX/UI</span>
                     </div>
-                    <span class="span-porcentagem">80%</span>
+                    <span class="skill__porcento">80%</span>
                 </div>
             </div>
-            <span><a  href="#"><i class="fa fa-star icon-color"></i></a></span>
+            <span><a  href="#"><i class="fa fa-star box__icon__cor"></i></a></span>
         </div>
-        <div class="box box-profissional box-efeito">
-            <h1 class="box-paragrafo texto-im">I'm</h1>
-            <p class="box-paragrafo texto-front">Front End</p>
-            <p class="box-paragrafo texto-ux">UX-UI</p>
+        <div class="box__item box-profissional box__item--efeito">
+            <h1 class="box__item--im">I'm</h1>
+            <p class="box__item--front">Front End</p>
+            <p class="box__item--ux">UX-UI</p>
         </div>
-        <div class="box box-geral box-efeito">
-            <h2>Sobre mim</h2>
-            <p class="box-paragrafo-experiencie">Sou programador Front-end, formado em Sistema de Informação. Apaixonado por web desde sempre e tento sempre melhorar, e claro, sou feliz com a escolha que fiz.</p>
-            <p class="box-paragrafo-experiencie">E o que eu não sei sempre consigo aprender rápido.</p>
-            <span><a  href="#"><i class="fa fa-star icon-color"></i></a></span>
-        </div>
-        <div class="box box-geral box-efeito">
+       
+        <div class="box__item box__item--geral box__item--efeito">
             <h2>Projetos</h2>
-            <p class="box-paragrafo-experiencie">Já desenvolvi projetos em Angular, React, Wordpress (layout responsivo) e criação metabox personalizados utilizando API do WP, criação de layouts do zero, sendo possível encontrar alguns deles no <a  class="texto-github" href="www.github.com/brunoamil">Github.</a></p>
-            <span><a  href="https://github.com/brunoamil"><i class="fa fa-star icon-color"></i></a></span>
+            <p>Já desenvolvi projetos em Angular, React, Wordpress (layout responsivo) e criação metabox__item personalizados utilizando API do WP, criação de layouts do zero, sendo possível encontrar alguns deles no <a  class="texto-github" href="www.github.com/brunoamil">Github.</a></p>
+            <span><a  href="https://github.com/brunoamil"><i class="fa fa-star box__icon__cor"></i></a></span>
+        </div>
+        <div class="box__item box__item--geral box__item--efeito">
+            <div class="box__item__colorido">
+                <div class="box__item__colorido--1">
+                    <h2> teste </h2>
+                </div>
+                <div class="box__item__colorido--2">
+                    <h2> teste </h2>
+                </div>
+                <div class="box__item__colorido--3">
+                    <h2> teste </h2>
+                </div>
+                <div class="box__item__colorido--4">
+                    <h2> teste </h2>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<footer class="footer"><p class="footer-text">desenvolvido por mim </p></footer>
+<footer class="footer"><p class="footer__desenvolvido">desenvolvido por mim </p></footer>
 </body>
 
 </html>
