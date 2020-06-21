@@ -1,4 +1,4 @@
-
+/* geral */
 body {
     font-family: 'Roboto', sans-serif;
     src: url('./font/Roboto-Black.ttf');
@@ -6,13 +6,11 @@ body {
     color: #52686d;
     background-color: rgb(3, 5, 24);
 }
-/* container */
 .container {
-    min-height: calc(100vh - 40px);
-    margin: 5px auto 5px auto;
+    /*min-height: calc(100vh - 40px); */
+    margin: 0 auto 0.25rem auto;
     max-width: 1200px;
 }
-
 /* menu */
 .header {
     display: flex;
@@ -23,138 +21,26 @@ body {
     background: rgb(3, 5, 24);
     box-shadow: 0 0 0.2rem #ddd;
 }
-
 .redesSociais {
     display: flex;
 }
 .redesSociais li {
-    margin-left: 4px;
-    margin-top: 14px;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
     padding: 5px 2px 4px 0;
 }
 .redesSociais li a {
     display: block;
-    height: 50px;
-    width: 50px;
-    font-size: 2em;
+    height: 2.55rem;
+    width: 2.25rem;
+    font-size: 2rem;
     color: #fff;
 }
 .redesSociais li a:hover {
     color: #885ae4;
     transition: ease 1.3s;
 }
-/* box */
-.box {
-    display: flex;
-    flex-wrap: wrap;
-}
-.box__item {
-    padding: 30px 15px 10px 15px;
-    height: 50vh;
-    box-sizing: border-box;
-    margin: 0.5%;
-    position: relative;
-    background-color: #fffefe;
-}
-.box__item h1 {
-    font-size: 1.65em;
-}
-
-.box__item--geral {
-    width: 30%;
-    box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
-    line-height: 25px;
-    min-width: 250px;
-}
-.box__item--geral h2 {
-    font-size: 1.35rem;
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-.box__item__colorido {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-.box__item__colorido--1 {
-    background-color: red;
-    position: absolute;
-    margin: 10px;
-    width: 50%;
-    
-}
-.box__item__colorido--2 {
-    background: yellow;
-    width: 50%;
-    height: 100%;
-}
-.box__item__colorido--3 {
-    background: blue;
-    width: 50%;
-    height: 100%;
-}
-.box__item__colorido--4 {
-    background: green;
-    width: 50%;
-    height: 100%;
-}
-.box__item--perfil {
-    width: 37%;
-    box-sizing: border-box;
-}
-
-.box__item__informacoes--barra {
-    border-left: 0.25rem solid #885ae4;
-    animation: example 1s infinite;
-
-}
-@keyframes example {
-    0% {
-        border-left: 0.25rem solid #885ae4;
-    }
-    100% {
-        border-left: 0.25rem solid #885ae4;
-    }
-}
-.box__item__informacoes {
-    display: flex;
-}
-.box__item__foto {
-    max-width: 170px;
-}
-.box__item__informacoes--foto {
-    font-size: 0.85rem;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-.box__item__informacoes--apresentacao {
-    text-align: center;
-    padding: 1rem;
-}
-.box__item__informacoes--principal {
-    color: #52686d;
-    font-weight: bold;
-}
-.box__item__informacoes--cargo {
-    font-size: 1.15rem;
-    margin-bottom: 2rem;
-}
-.box-profissional {
-    width: 37%;
-    box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
-    box-sizing: border-box;
-    font-size: 3em;
-    position: relative;
-
-}
-
-.box__item--ux {
-    color: #885ae4;
-    font-weight: bold;
-}
-
+/* estrelinhas das boxes */
 .box__icon__cor {
     color: rgba(0,0,0, 0.1);
     position: absolute;
@@ -163,21 +49,75 @@ body {
     font-size: 1.5em;
     z-index: 4;
 }
-.texto-github {
-    text-decoration: none;
-    color: #52686d;
+/* box e item */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box__item {
+    padding: 2rem 1rem 0.75rem 1rem;
+    height: 50vh;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fffefe;
+    margin-bottom: 1rem;
 }
 
+/* box geral */
+.box__item--geral {
+    box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+    line-height: 25px;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box__item--geral h2 {
+    font-size: 1.35rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+/* box perfil */
+.box__item--perfil {
+    box-sizing: border-box;
+    border-left: 0.25rem solid #885ae4;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box__item__perfil {
+    display: flex;
+}
+.box__item__perfil--foto {
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.box__item__foto {
+    max-width: 100%;
+}
+.box__item__perfil--apresentacao {
+    text-align: center;
+    padding: 1rem;
+}
+.box__item__perfil--principal {
+    color: #52686d;
+    font-weight: bold;
+}
+.box__item__perfil--cargo {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+/* box skill */
 .skill {
-    height: 20px;
+    height: 1.35rem;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 0.35rem;
     width: 100%;
-    height: 25px;
     background: #ddd;
-
 }
 .skill li {
     color: black;
@@ -188,7 +128,7 @@ body {
     display: inline-block;
     padding-left: 15px;
     color: #FFF;
-    height: 25px;
+    height: 1.35rem;
     background: #78cadc;
 }
 .skill-pontuacao {
@@ -197,22 +137,22 @@ body {
 }
 .barra-skill-1 {
     background: #885ae4;
-    height: 25px;
+    height: 1.35rem;
     animation: progress-animation-1 3s forwards;
 }
 .barra-skill-2 {
     background: #885ae4;
-    height: 25px;
+    height: 1.35rem;
     animation: progress-animation-2 3s forwards;
 }
 .barra-skill-3 {
     background: #885ae4;
-    height: 25px;
+    height: 1.35rem;
     animation: progress-animation-3 3s forwards;
 }
 .skill__barra--4 {
     background: #885ae4;
-    height: 25px;
+    height: 1.35rem;
     animation: progress-animation-4 3s forwards;
 }
 .skill__porcento {
@@ -237,8 +177,33 @@ body {
     from { width: 15%;}
     to { width: 95%; }
 }
-
-
+/* box ux  */
+.box__ux {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 3rem;
+}
+.box__ux--im {
+    font-weight: bold;
+}
+.box__ux--front {
+    font-weight: bold;
+    color: #78cadc;
+}
+.box__ux--ux {
+    color: #885ae4;
+    font-weight: bold;
+}
+/* box projetos */
+.texto-github {
+    text-decoration: none;
+    color: #52686d;
+}
+/* efeito de hover nos boxes */
 .box__item--efeito:after,
 .box__item--efeito:before {
     content: "";
@@ -284,6 +249,7 @@ body {
 
 /* footer */
 .footer {
+    text-align: center;
     background: rgb(3, 5, 24);
     padding: 10px 0 10px 15px;
     height: 20px;
@@ -292,7 +258,6 @@ body {
 }
 .footer__desenvolvido {
     color: #fff;
-    text-align: end;
     padding-right: 25px;
 }
 .footer__desenvolvido::after {
@@ -300,67 +265,51 @@ body {
 }
 
 /* MEDIA QUERY */
-@media (max-width: 567px) {
-   .box__item {
-       width: 100%;
-   }
-   .box {
-        flex-direction: column;
+@media (min-width: 576px) {
+    .box__item {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
     }
-    .box__item--im {
-        margin-top: 50px;
-        margin-left: 40px;
+    .box__item--perfil {
+        width: 100%;
     }
-    .box__item--ux {
-        margin-left: 40px;
+    .box__item--geral {
+        width: 100%;
     }
-   
-    .box__item--front {
-       margin-left: 40px;
+    .box__ux {
+        width: 100%;
     }
-    .box__item--geral h2 {
-        font-size: 2em;
-        margin-bottom: 30px;
-    }
-   .footer__desenvolvido {
-        text-align: center;
-    }
-   
+
 }
-@media (min-width: 568px) {
+@media (min-width: 768px) { 
+    .box__item {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .box__item--perfil {
+        width: 45%;
+    }
+    .box__item--geral {
+        width: 45%;
+    }
+    .box__ux {
+        width: 45%;
+    }
     
-    .box__item--geral {
-        width: 48%;
-    }
-    .box__item--perfil {
-        width: 48%;
-    }
-    .box-profissional {
-        width: 48%;
-     }
-   
 }
-
-
-@media (min-width: 991px) {
-    .box__item--geral {
-        width: 30%;
+@media (min-width: 991px) { 
+    .box__item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
     }
     .box__item--perfil {
-        width: 37%;
+        width: 39%;
     }
-    .box-profissional {
-        width: 37%;
-     }
-   
-     .box__item--im {
-         margin-top: 50px;
-         margin-left: 40px;
-     }
-     .box__item--front {
-        margin-left: 40px;
-     }
-     .box__item--ux {
-         margin-left: 40px;
-     }
+    .box__item--geral {
+        width: 28%;
+    }
+    .box__ux {
+        width: 39%;
+    }
 }

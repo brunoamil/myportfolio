@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>My Portfólio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/font-awesome/css/all.css">
-        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704521-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-167704521-1');
-        </script>
-    </head>
+<head>
+    <title>My Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704521-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-167704521-1');
+    </script>
+</head>
 <body>
+<!-- menu -->
+<div class="container">
     <header class="header">
         <nav>
             <ul class="redesSociais">
@@ -28,28 +30,31 @@
             </ul>
         </nav>
     </header>
-<div class="container">
-    <div class="box"> <!-- box-->
-        <div class="box__item box__item--perfil box__item__informacoes--barra">
-            <div class="box__item__informacoes">
-               
-                    <div class="box__item__informacoes--foto">
-                        <img class="box__item__foto" src="assets/img/perfil.png">
-                        <p>bruno-amil@hotmail.com</p>
-                    </div>
-               
-                <div class="box__item__informacoes--apresentacao">
-                    <h1 class="box__item__informacoes--principal">Bruno Lima</h1>
-                    <h2 class="box__item__informacoes--cargo">Desenvolvedor Front End</h2>
-                    <p class="box__item__informacoes--descricao">Sou apaixonado por tecnologia, web e principalmente por viagens e a vida. </p> 
+</div>
+<!-- conteudo completo -->
+  <div class="container">
+    <div class="box"> 
+        <!-- box perfil -->
+        <div class="box__item box__item--perfil">
+            <div class="box__item__perfil">
+                <div class="box__item__perfil--foto">
+                    <img class="box__item__foto" src="assets/img/perfil.png">
+                    <p>bruno-amil@hotmail.com</p>
+                </div>
+                <div class="box__item__perfil--apresentacao">
+                    <h1 class="box__item__perfil--principal">Bruno Lima</h1>
+                    <h2 class="box__item__perfil--cargo">Desenvolvedor Front End</h2>
+                    <p>Sou apaixonado por tecnologia, web e principalmente por viagens e a vida. </p> 
                 </div>
             </div>
         </div>
+        <!-- box experiência -->
         <div class="box__item box__item--geral box__item--efeito">
             <h2>Experiência</h2>
             <p>Algumas tecnologias que já trabalhei durante meus 3 anos como Front-end, são elas: HTML, CSS(Stylus, Sass), JavaScript(ES6), UX/UI, Design Responsivo(Mobile First), Css Frameworks(Bootstrap, Materialize), ReactJS, NodeJs, Git, MySql, Wordpress.</p>
             <span><i class="fa fa-star box__icon__cor"></i></span>
         </div>
+        <!-- box skills -->
         <div class="box__item box__item--geral box__item--efeito">
             <h2>Minhas Skills</h2>
             <div class="skill">
@@ -111,36 +116,25 @@
             </div>
             <span><a  href="#"><i class="fa fa-star box__icon__cor"></i></a></span>
         </div>
-        <div class="box__item box-profissional box__item--efeito">
-            <h1 class="box__item--im">I'm</h1>
-            <p class="box__item--front">Front End</p>
-            <p class="box__item--ux">UX-UI</p>
+        <!-- box i'm front end -->
+        <div class="box__item box__ux box__item--efeito">
+            <h1 class="box__ux--im">I'm</h1>
+            <p class="box__ux--front">Front End</p>
+            <p class="box__ux--ux">UX-UI</p>
         </div>
-       
+        <!-- box  descrição projetos -->
         <div class="box__item box__item--geral box__item--efeito">
             <h2>Projetos</h2>
             <p>Já desenvolvi projetos em Angular, React, Wordpress (layout responsivo) e criação metabox__item personalizados utilizando API do WP, criação de layouts do zero, sendo possível encontrar alguns deles no <a  class="texto-github" href="www.github.com/brunoamil">Github.</a></p>
             <span><a  href="https://github.com/brunoamil"><i class="fa fa-star box__icon__cor"></i></a></span>
         </div>
+        <!-- box a definir -->
         <div class="box__item box__item--geral box__item--efeito">
-            <div class="box__item__colorido">
-                <div class="box__item__colorido--1">
-                    <h2> teste </h2>
-                </div>
-                <div class="box__item__colorido--2">
-                    <h2> teste </h2>
-                </div>
-                <div class="box__item__colorido--3">
-                    <h2> teste </h2>
-                </div>
-                <div class="box__item__colorido--4">
-                    <h2> teste </h2>
-                </div>
-            </div>
+            <h2> Teste a decidir</h2>
         </div>
     </div>
 </div>
-<footer class="footer"><p class="footer__desenvolvido">desenvolvido por mim </p></footer>
+<!-- footer -->
+<footer class="footer"><p class="footer__desenvolvido">desenvolvido por mim </p></footer> 
 </body>
-
 </html>
