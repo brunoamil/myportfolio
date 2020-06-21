@@ -271,22 +271,22 @@ body {
 .hexagono::before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -25px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37px solid transparent;
+    border-left: 38px solid transparent;
     border-right: 38px solid transparent;
     border-bottom: 25px solid #885ae4;
 }
 .hexagono::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -25px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37px solid transparent;
+    border-left: 38px solid transparent;
     border-right: 38px solid transparent;
     border-top: 25px solid #885ae4;
 }
