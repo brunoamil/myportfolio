@@ -272,7 +272,7 @@ body {
 .hexagono::before {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -24px;
     left: 0;
     width: 0;
     height: 0;
@@ -283,7 +283,7 @@ body {
 .hexagono::after {
     content: "";
     position: absolute;
-    bottom: -25px;
+    bottom: -24px;
     left: 0;
     width: 0;
     height: 0;
