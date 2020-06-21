@@ -71,6 +71,9 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.box__item--geral p {
+    margin-bottom: 5px;
+}
 .box__item--geral h2 {
     font-size: 1.35rem;
     text-align: center;
