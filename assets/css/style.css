@@ -246,7 +246,7 @@ body {
     text-decoration: none;
     color: #52686d;
 }
-/* qualidades */
+/* qualidades 
 .qualidades {
     display: flex;
     flex-wrap: wrap;
@@ -260,7 +260,7 @@ body {
     box-sizing: border-box;
     margin: 1rem auto 1rem auto;
     height: 70px;
-}
+}*/
 /* efeito de hover nos boxes */
 .box__item--efeito:after,
 .box__item--efeito:before {
