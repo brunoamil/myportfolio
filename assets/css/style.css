@@ -260,10 +260,10 @@ body {
 
 }
 .hexagono {
-   width: 100px;
+   width: 75px;
    box-sizing: border-box;
    background: #885ae4;
-   height: 50px;
+   height: 40px;
    position: relative;
    align-content: center;
    text-align: center;
@@ -272,27 +272,28 @@ body {
 .hexagono::before {
     content: "";
     position: absolute;
-    top: -30px;
+    top: -25px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 30px solid #885ae4;
+    border-left: 37px solid transparent;
+    border-right: 38px solid transparent;
+    border-bottom: 25px solid #885ae4;
 }
 .hexagono::after {
     content: "";
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 30px solid #885ae4;
+    border-left: 37px solid transparent;
+    border-right: 38px solid transparent;
+    border-top: 25px solid #885ae4;
 }
 .hexagono__texto {
     text-align: center;
+    font-weight: bold;
 }
 .size__icon {
     font-size: 2rem;
