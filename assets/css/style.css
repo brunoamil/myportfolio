@@ -103,7 +103,8 @@ body {
 }
 .box__item__perfil--principal {
     color: #52686d;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 1.75rem;
 }
 .box__item__perfil--cargo {
     font-size: 1.15rem;
