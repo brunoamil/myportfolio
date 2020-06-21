@@ -190,14 +190,13 @@ body {
 }
 .box__nome--im {
     font-weight: bold;
-    margin-left: 3.25rem;
     margin-top: 2rem;
     color: #78cadc;
 }
 .box__nome--front {
     color: #885ae4;
     font-weight: bold;
-    margin-left: 3.25rem;
+    text-align: center;
     opacity: 0;
     animation: fadeInFront 0s 1.1s both;
 }
