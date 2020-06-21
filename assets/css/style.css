@@ -178,30 +178,88 @@ body {
     to { width: 95%; }
 }
 /* box ux  */
-.box__ux {
+.box__nome {
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
     box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
     box-sizing: border-box;
     position: relative;
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 4.25rem;
 }
-.box__ux--im {
+.box__nome--im {
     font-weight: bold;
-}
-.box__ux--front {
-    font-weight: bold;
+    margin-left: 3.25rem;
+    margin-top: 2rem;
     color: #78cadc;
 }
-.box__ux--ux {
+.box__nome--front {
     color: #885ae4;
     font-weight: bold;
+    margin-left: 3.25rem;
+    opacity: 0;
+    animation: fadeInFront 0s 1.1s both;
+}
+.box__nome--efeito {
+    position: relative;
+    overflow: hidden;
+}
+.box__nome--front:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #885ae4;
+    transform: translateX(-100%);
+    animation: enLargeBackground 1s .8s both, revealBackground 0.5s 1.1s both;
+}
+/* animacao pro texto front end */
+@keyframes fadeInFront {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes enLargeBackground {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes revealBackground {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 /* box projetos */
 .texto-github {
     text-decoration: none;
     color: #52686d;
+}
+/* qualidades */
+.qualidades {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.qualidades__item {
+    color: #fff;
+    background-color: #52686d;
+    width: 46%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem auto 1rem auto;
+    height: 70px;
 }
 /* efeito de hover nos boxes */
 .box__item--efeito:after,
@@ -276,7 +334,7 @@ body {
     .box__item--geral {
         width: 100%;
     }
-    .box__ux {
+    .box__nome {
         width: 100%;
     }
 
@@ -292,7 +350,7 @@ body {
     .box__item--geral {
         width: 45%;
     }
-    .box__ux {
+    .box__nome {
         width: 45%;
     }
     
@@ -309,7 +367,14 @@ body {
     .box__item--geral {
         width: 28%;
     }
-    .box__ux {
+    .box__nome {
         width: 39%;
+    }
+    .box__nome--im {
+        margin-left: 3.25rem;
+        margin-top: 2rem;
+    }
+    .box__nome--front {
+        margin-left: 3.25rem;
     }
 }
