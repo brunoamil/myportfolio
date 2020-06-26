@@ -1,9 +1,14 @@
 /* geral */
+@font-face {
+    src: url(../../assets/font/static/Quicksand-Regular.ttf);
+    font-family: 'Quicksand';    
+    font-weight: normal;
+} 
 body {
-    font-family: 'Roboto', sans-serif;
-    src: url('./font/Roboto-Black.ttf');
+    
+    font-family: 'Quicksand', sans-serif;
     font-size: 100%;
-    color: #52686d;
+    color: rgb(3, 5, 23);
     background-color: rgb(3, 5, 24);
 }
 .container {
@@ -59,8 +64,9 @@ body {
     height: 50vh;
     box-sizing: border-box;
     position: relative;
-    background-color: #fffefe;
+    background-color: rgba(230, 230, 230, 1);
     margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
 /* box geral */
@@ -86,7 +92,7 @@ body {
 /* box perfil */
 .box__item--perfil {
     box-sizing: border-box;
-    border-left: 0.25rem solid #885ae4;
+    border-left: 0.45rem solid #885ae4;
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -315,17 +321,19 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 2px;
+    left: 2px;
+    right: 2px;
     transition: transform .4s ease-in-out;
 }
 .box__item--efeito:before {
+    border-radius: 8px;
     border-left: 2px solid #885ae4;
     border-right: 2px solid #885ae4;
     transform: scaleY(0);
 }
 .box__item--efeito::after {
+    border-radius: 8px;
     border-top: 2px solid #885ae4;
     border-bottom: 2px solid #885ae4;
     transform: scaleX(0);
